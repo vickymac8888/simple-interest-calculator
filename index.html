@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web App – Simple Interest Calculator</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Simple Interest Calculator</h1>
+      <div id="form">
+        <label for="">Amount</label><input type="number" id="amount" /><br />
+        <label for="">Interest Rate</label>
+        <input
+          type="range"
+          id="slider"
+          value="20"
+          step="0.25"
+          min="0%"
+          max="100%"
+          onchange="sliderValue()"
+        /><span id="rate">20%</span><br />
+        <label for="">No. of Years</label>
+        <select name="" id="option">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option></select
+        ><br />
+        <button onclick="compute()">Compute Interest</button>
+        <p id="ans"></p>
+      </div>
+      <div id="para">
+        <p>© Everyone Can get Rich</p>
+        <p>This Calculator belongs to Vicky</p>
+      </div>
+    </div>
+  </body>
+  <script src="/index.js"></script>
+</html>
